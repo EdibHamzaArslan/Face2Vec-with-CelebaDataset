@@ -33,7 +33,6 @@ class SlimModule(tf.keras.Model):
         
         x = self.sse1(inputs)
         x = self.bn1(x)
-        x = self.act(x)
 
         skip_connection = self.skip_connection(inputs)
         skip_connection = self.bn2(skip_connection)
